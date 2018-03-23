@@ -3,6 +3,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     android:orientation="vertical">
 
     <TextView
@@ -10,7 +11,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Add LayoutInflater"
-        android:textSize="20dp"/>
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp" />
 
     <Button
         android:id="@+id/button"
@@ -18,11 +21,15 @@
         android:layout_height="wrap_content"
         android:text="ADD" />
 
-    <LinearLayout
-        android:id="@+id/container"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-    </LinearLayout>
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
