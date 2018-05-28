@@ -19,6 +19,13 @@
        01) 레이아웃 정의 ( XML 레이아웃 파일 ↔ 자바 소스코드 파일 ) : Developer
        02) 메모리로딩 : System
        03) 화면(뷰그룹) : System
+     - Instantiates a layout XML file into its corresponding View objects.
+       It is never used directly.
+       Instead, use getLayoutInflater() or getSystemService(Class) to retrieve a standard LayoutInflater instance
+       that is already hooked up to the current context and correctly configured for the device you are running on.
+       To create a new LayoutInflater with an additional LayoutInflater.
+       Factory for your own views, you can use cloneInContext(Context) to clone an existing ViewFactory,
+       and then call setFactory(LayoutInflater.Factory) on it to include your Factory.
 
   ○ setContentView
      - 메소드의 역할
